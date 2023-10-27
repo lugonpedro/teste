@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Nunito", sans-serif;
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .languageSelected {
+    @apply opacity-20 hover:opacity-80;
+  }
+
+  .button {
+    @apply p-2 rounded-md duration-300 cursor-pointer bg-[#246444]/20 hover:bg-[#246444] text-white;
+  }
+
+  .link {
+    @apply duration-300 cursor-pointer text-white hover:text-[#246444];
+  }
+
+  .pageTitle {
+    @apply tracking-[4px] text-white text-xl uppercase font-bold text-center my-8 md:text-2xl xl:text-3xl;
+  }
+
+  .contactInput {
+    @apply outline-none rounded-sm border-b px-6 py-4 bg-black border-white text-white
+      placeholder-white transition-all focus:border-white focus:text-white focus:bg-green-400/20;
+  }
+}
