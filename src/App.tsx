@@ -4,7 +4,7 @@ import { translateResources } from "./data/translate";
 
 import Header from "./sections/Header";
 import About from "./sections/About";
-import Experience from "./sections/Experience";
+import Experiences from "./sections/Experiences";
 import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
 import Contact from "./sections/Contact";
@@ -21,12 +21,12 @@ const App = () => {
         <Header />
       </section>
 
-      <section id="experience">
-        <Experience />
-      </section>
-
       <section id="projects">
         <Projects />
+      </section>
+
+      <section id="experience">
+        <Experiences />
       </section>
 
       <section id="about">

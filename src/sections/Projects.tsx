@@ -44,7 +44,7 @@ export default function Projects() {
       <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
         {projects.map((project: ProjectProps) => (
           <a
-            className="max-w-sm bg-background border border-green rounded-lg text-pearl hover:bg-green/20 duration-300"
+            className="max-w-sm bg-background border border-white rounded-lg text-white hover:bg-green/20 duration-300"
             key={project.title}
             title={project.title}
             href={project.link}
